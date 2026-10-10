@@ -5,30 +5,36 @@
 }
 
 .card,
-.card2 {
-    background-color: gray;
+.card2,
+.card3 {
+    background-color: #262626;
+    color: #F5F5F5;
     flex: 1;
-    min-height: 400px;
+    min-height: 300px;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
     font-size: 20px;
+    border: 2px solid #404040;
 }
 
 .card h2,
-.card2 h2 {
+.card2 h2,
+.card3 h2 {
+    color: #A3E635;
     font-size: 30px;
     text-align: center;
 }
 
 .cabe {
-    margin-left: 0 2%;
+    margin: 0 2%;
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    background-color: blanchedalmond;
+    background-color: #0A0A0A;
     text-align: center;
+    border: 2px solid #A3E635;
 }
 
 .cabe div {
@@ -37,30 +43,45 @@
 }
 
 .cabe h1 {
+    color: #A3E635;
     font-size: 30px;
 }
 
 body {
-    background-color: burlywood
+    background-color: #171717;
+    color: #F5F5F5;
+    font-family: Arial, sans-serif;
 }
 
 p {
-    border: 3px solid grey;
     padding: 10px;
-}
-
-p {
-    font-family: courier;
+    color: #F5F5F5;
+    font-family: Courier, monospace;
     font-size: 140%;
+    text-align: center;
 }
 
 .contato {
-    background-color: gray;
-    min-height: 100px;
+    background-color: #262626;
+    color: #F5F5F5;
+    height: fit-content;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0 2%;
+    border: 2px solid #404040;
+}
+
+.contato h2 {
+    color: #A3E635;
+}
+
+.contato a {
+    color: #A3E635 !important;
+    font-weight: bold;
+}
+
+li {
+    color: #F5F5F5;
 }
