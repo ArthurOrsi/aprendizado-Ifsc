@@ -85,3 +85,8 @@ p {
 li {
     color: #F5F5F5;
 }
+
+.card2 a {
+    color: #A3E635 !important;
+    font-weight: bold;
+}
