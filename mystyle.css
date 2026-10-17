@@ -90,3 +90,7 @@ li {
     color: #A3E635 !important;
     font-weight: bold;
 }
+
+.card2 p {
+    padding: 0px;
+}

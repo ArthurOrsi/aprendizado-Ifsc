@@ -1,0 +1,434 @@
+body {
+    background-color: #f7f9fc;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cabe {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 8px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.cabe-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.logo-area img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-texto h1 {
+    color: #2b8a3e;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.logo-texto span {
+    color: #666666;
+    font-size: 11px;
+}
+
+.busca-container {
+    flex: 1;
+    max-width: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.busca-container input {
+    width: 100%;
+    padding: 7px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    font-size: 13px;
+    transition: border-color 0.2s;
+}
+
+.busca-container input:focus {
+    border-color: #2b8a3e;
+}
+
+.busca-container button {
+    background-color: #2b8a3e;
+    color: #ffffff;
+    border: 1px solid #2b8a3e;
+    padding: 7px 12px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.busca-container button:hover {
+    background-color: #216e31;
+}
+
+.acoes-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-contato {
+    background-color: #f1f5f9;
+    color: #334155;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #cbd5e1;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+}
+
+.btn-contato:hover {
+    background-color: #e2e8f0;
+    border-color: #94a3b8;
+    color: #0f172a;
+}
+
+.btn-whats {
+    background-color: #25d366;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+    white-space: nowrap;
+}
+
+.btn-whats:hover {
+    background-color: #1ebc57;
+    transform: translateY(-1px);
+}
+
+.banner {
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 950px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+main h2 {
+    text-align: center;
+    color: #222222;
+    font-size: 18px;
+    margin: 18px 0 12px 0;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 950px;
+    margin: 0 auto 30px auto;
+    padding: 0 15px;
+}
+
+.produto {
+    background-color: #ffffff;
+    width: 210px;
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.07);
+}
+
+.produto img {
+    width: 100%;
+    max-height: 110px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    padding: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.produto-info {
+    width: 100%;
+}
+
+.produto h3 {
+    color: #222222;
+    font-size: 13px;
+    margin: 8px 0 4px 0;
+    min-height: 32px;
+}
+
+.preco-card {
+    color: #2b8a3e;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+
+.produto a {
+    display: block;
+    width: 100%;
+    background-color: #74b816;
+    color: #ffffff;
+    padding: 7px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+.produto a:hover {
+    background-color: #5c940d;
+}
+
+.rodape {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    color: #555555;
+    box-sizing: border-box;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.contato-secao {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+}
+
+.contato-secao h2 {
+    color: #1e293b;
+    font-size: 20px;
+    margin: 0 0 4px 0;
+}
+
+.subtitulo-contato {
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.contato-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contato-info {
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.info-item .icone {
+    font-size: 18px;
+    background-color: #f1f5f9;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.info-item h3 {
+    margin: 0 0 2px 0;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.info-item p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.contato-form {
+    flex: 1.2;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato-form h3 {
+    margin: 0 0 6px 0;
+    color: #1e293b;
+    font-size: 15px;
+}
+
+.contato-form label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #475569;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    border-color: #2b8a3e;
+}
+
+.btn-enviar {
+    background-color: #2b8a3e;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 5px;
+}
+
+.btn-enviar:hover {
+    background-color: #216e31;
+}
+
+.detalhe-container {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.voltar {
+    margin-bottom: 15px;
+}
+
+.voltar a,
+.voltar a:visited {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #ffffff;
+    color: #475569;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.voltar a:hover {
+    background-color: #2b8a3e;
+    color: #ffffff;
+    border-color: #2b8a3e;
+}
+
+.botao-whatsapp,
+.botao-whatsapp:visited {
+    display: block;
+    width: 100%;
+    background-color: #25d366;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao-whatsapp:hover {
+    background-color: #1ebc57;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .cabe-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .busca-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .acoes-header {
+        width: 100%;
+        justify-content: center;
+    }
+}
