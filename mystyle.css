@@ -94,3 +94,8 @@ li {
 .card2 p {
     padding: 0px;
 }
+
+.card2 img {
+    width: 300px;
+    height: auto;
+}
