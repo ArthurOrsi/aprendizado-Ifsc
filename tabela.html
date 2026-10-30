@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Atendimento</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url("f1-audi.png") no-repeat center center fixed;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .horario {
+            background: #fff;
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .horario h2 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .dia {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0;
+            border-bottom: 1px solid #eee;
+            color: #444;
+            font-size: 15px;
+        }
+
+        .dia:last-of-type {
+            border-bottom: none;
+        }
+
+        .hora {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .fechado {
+            color: #e74c3c;
+        }
+
+        .status {
+            margin-top: 25px;
+            padding: 13px;
+            background: #eaf8ef;
+            color: #23964b;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="horario">
+
+        <h2>Horário de Atendimento</h2>
+        <p class="subtitulo">Confira nossos dias e horários</p>
+
+        <div class="dia">   
+            <span>Segunda-feira</span>
+            <span class="hora">08h às 18h</span>
+        </div>
+
+        <div class="dia">
+            <span>Terça-feira</span>
+            <span class="hora">08h às 18h</span>
+        </div>
+
+        <div class="dia">
+            <span>Quarta-feira</span>
+            <span class="hora">08h às 18h</span>
+        </div>
+
+        <div class="dia">
+            <span>Quinta-feira</span>
+            <span class="hora">08h às 18h</span>
+        </div>
+
+        <div class="dia">
+            <span>Sexta-feira</span>
+            <span class="hora">08h às 18h</span>
+        </div>
+
+        <div class="dia">
+            <span>Sábado</span>
+            <span class="hora">08h às 12h</span>
+        </div>
+
+        <div class="dia">
+            <span>Domingo</span>
+            <span class="hora fechado">Fechado</span>
+        </div>
+
+        <div class="status">
+            ● Atendimento conforme horário comercial
+        </div>
+
+    </div>
+
+</body>
+
+</html>
