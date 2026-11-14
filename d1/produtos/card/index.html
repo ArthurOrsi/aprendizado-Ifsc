@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card Audi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eee;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: grey;
+            width: 400px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .card-branco {
+            background-color: white;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 25px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .preco {
+            color: green;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+            position: relative;
+            position: absolute;
+            top: 565px;
+            right: 593px;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="card">
+        <div class="card-branco">
+
+            <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=600"
+                 alt="Carro Audi">
+
+            <h1>Audi</h1>
+
+            <p>
+                A Audi é uma marca alemã de automóveis,
+                conhecida por seus carros de luxo,
+                tecnologia avançada, conforto e desempenho.
+            </p>
+
+            <p class="preco">R$ 250.000</p>
+
+            <button onclick="alert('Compra iniciada!')">
+                Comprar agora
+            </button>
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -226,3 +226,14 @@ form button[type="reset"]:hover {
         font-size: 16px;
     }
 }
+
+button {
+    background: #A3E635;
+    padding: 20px;
+    26px;
+}
+
+.botao-h {
+    background: #A3E635;
+    color: white
+}
