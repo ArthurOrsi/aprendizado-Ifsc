@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria F1</title>
+    <style>
+        body {
+            background-color: #15151e;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .celula {
+            background-color: #262633;
+            border-bottom: 4px solid #e10600;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 800px) {
+            .galeria {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+        h1 {font-size: clamp(2rem, 5vw, 4rem);}
+    </style>
+</head>
+
+<body>
+    <h1> Equipes F1</h1>
+    <section class="galeria">
+        <section class="celula">Ferrari</section>
+        <section class="celula">Red Bull</section>
+        <section class="celula">Mercedes</section>
+        <section class="celula">McLaren</section>
+    </section>
+
+</body>
+
+</html>
